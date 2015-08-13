@@ -1,0 +1,114 @@
+#jce_lbOverlay {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 10000;
+}
+
+#jce_lbCenter, #jce_lbBottomContainer {
+	position: absolute;
+	left: 50%;
+	overflow: hidden;
+	background-color: #ffffff;
+	z-index: 10001;
+}
+
+#jce_lbLoading {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	background: #ffffff url(../images/loading.gif) center 50% no-repeat;
+}
+
+#jce_lbImage {
+	padding: 10px;
+}
+
+#jce_lbNav {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+#jce_lbNav a { 
+	outline: none;
+}
+#jce_lbPrevLink, #jce_lbNextLink {
+	width: 49%;
+	height: 100%;
+	background: transparent url(../images/blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+}
+#jce_lbPrevLink { 
+	left: 0;
+	float: left;
+}
+#jce_lbNextLink { 
+	right: 0;
+	float: right;
+}
+#jce_lbPrevLink:hover, #jce_lbPrevLink:visited:hover { 
+	background: url(../images/prevlabel.gif) left 15% no-repeat;
+}
+#jce_lbNextLink:hover, #jce_lbNextLink:visited:hover { 
+	background: url(../images/nextlabel.gif) right 15% no-repeat;
+}
+
+#jce_lbBottom {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000;
+	line-height: 1.4em;
+	text-align: left;
+	border: 10px solid #fff;
+	border-top-style: none;
+}
+
+#jce_lbCloseLink {
+	display: block;
+	float: right;
+	width: 30px;
+	height: 30px;
+	background: transparent url(../images/close.gif) no-repeat center;
+	margin: 5px 0;
+}
+
+#jce_lbCaption, #jce_lbNumber {
+	margin-right: 71px;
+}
+
+#jce_lbCaption {
+	font-weight: bold;
+}
+
+img.zoomLink {
+	vertical-align: middle;
+	border: 0;
+}
+img.zoomImg {
+	position: absolute;
+	border: 0;
+}
+
+.tooltip {
+	z-index: 9999;
+	width: 180px;
+	text-align:left;
+	color: #000000;
+	background-color:#ffffff;
+	border:1px solid black;
+	padding: 4px;
+}
+.tooltip h4 {
+	font-weight: bold;
+	font-size: 11px;
+	margin: 0px;
+}
+.tooltip p {
+	font-size: 11px;
+}
